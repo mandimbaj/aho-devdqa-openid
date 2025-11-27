@@ -191,8 +191,8 @@ DATABASES = {
         'USER': os.environ['DBUSER'],
         'PASSWORD': os.environ['DBPASS'],
         'OPTIONS': {
-            #'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-			'sql_mode': 'traditional',
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+			#'sql_mode': 'traditional',
             'init_command': 'SET storage_engine=INNODB;',
             'ssl': {'ca': '/home/site/cert/DigiCertGlobalRootCA.crt.pem'}
             },
