@@ -20,6 +20,8 @@ from rest_framework_swagger.views import get_swagger_view
 
 from rest_framework.authtoken.views import obtain_auth_token
 
+from django.http import JsonResponse
+
 admin.autodiscover() # Autoloads the custom login page instead of auth.admin view
 admin.site.login = login_required(admin.site.login)
 
@@ -94,3 +96,6 @@ urlpatterns += i18n_patterns ( # must be python immutable list () and not []
 # Routes for error handlers served by home view and templates/home/errors
 handler404 = 'home.views.handler404'
 handler500 = 'home.views.handler500'
+
+def health(request):
+    return JsonResponse({"status": "ok"})
