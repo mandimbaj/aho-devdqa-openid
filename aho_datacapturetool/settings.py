@@ -18,7 +18,7 @@ SECRET_KEY = os.environ['SECRET']
 
 DEBUG = True # make this false to test autocomplete js issue; missing in blob
 
-ALLOWED_HOSTS = ['localhost','127.0.0.1',]
+ALLOWED_HOSTS = ['localhost','127.0.0.1','af-aho-datacapturetool-dev.azurewebsites.net',]
 
 # Application definition
 INSTALLED_APPS = [
