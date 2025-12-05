@@ -199,7 +199,7 @@ DATABASES = {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
 			#'sql_mode': 'traditional',
             'init_command': 'SET storage_engine=INNODB;',
-            'ssl': {'ca': '/home/site/cert/DigiCertGlobalRootCA.crt.pem'}
+            'ssl': {'ca': '/DigiCertGlobalRootCA.crt.pem'}
             },
     }
 }
